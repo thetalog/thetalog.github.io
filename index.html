@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="ul">
+          <li>
+            <a href="#" onclick="smoothScrollToSection('home')">Home</a>
+          </li>
+          <li>
+            <a href="#" onclick="smoothScrollToSection('about')">About</a>
+          </li>
+          <li>
+            <a href="#" onclick="smoothScrollToSection('projects')">Projects</a>
+          </li>
+          <li>
+            <a href="#" onclick="smoothScrollToSection('skills')">Skills</a>
+          </li>
+          <li>
+            <a href="#" onclick="smoothScrollToSection('contact')">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <video autoplay muted loop id="background-video">
+          <source src="assets/home_bg_video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div id="home-child-container-1">
+          <div class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <p id="home-child-1-para">
+              Hi, I'm Deepraj Das, a passionate Full Stack Developer with a
+              knack for building dynamic and responsive web applications. With a
+              solid foundation in both front-end and back-end technologies, I
+              excel at creating seamless user experiences and robust server-side
+              solutions.
+            </p>
+          </div>
+        </div>
+        <div class="arrow-container" onclick="arrowOnClickHandler()">
+          <div class="arrow"></div>
+        </div>
+      </section>
+      <section id="about">
+        <div id="about-container-1">
+          <h2>About Me</h2>
+          <p id="about-para">
+            My journey in web development began with a curiosity about how
+            websites work and has since evolved into a dedicated career. <br />
+            I have honed my skills through various projects, internships, and
+            continuous learning, specializing in technologies like JavaScript,
+            Vue.js, Node.js, MongoDB, and more. <br />I thrive in collaborative
+            environments and enjoy solving complex problems with innovative
+            solutions.<br />
+            My goal is to leverage my technical expertise to contribute to
+            meaningful projects and stay at the forefront of web development
+            trends.<br />
+            When I'm not coding, I enjoy exploring new tech gadgets, staying
+            active with home workouts, and diving into the world of mobile
+            forensics.<br />
+            Feel free to explore my portfolio to see some of the projects I've
+            worked on, and don't hesitate to reach out if you'd like to connect
+            or collaborate!
+          </p>
+        </div>
+        <div id="about-container-2">
+          <div id="my-photo-container">
+            <img src="assets/myphoto.jpg" alt="My Photo" id="my-photo" />
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>Details of projects I have worked on.</p>
+        <div id="projects-container"></div>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <p>List of skills.</p>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Contact details.</p>
+      </section>
+    </main>
+  </body>
+</html>
