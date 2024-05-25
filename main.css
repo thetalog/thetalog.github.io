@@ -37,6 +37,11 @@
   font-weight: 700;
   font-style: italic;
 }
+/* #F6F2F6
+#E1D5D9
+#B7A7AE
+#58545B
+#1C252C */
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -193,16 +198,44 @@ ul:last-child {
 }
 
 #projects {
-  background-color: aqua;
+  background-color: #1c252c;
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-
+#projects_container_1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+#projects_container_2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+.particular-project-container {
+  display: flex;
+  flex-direction: column;
+}
+#project-1-info-container,
+#project-2-info-container,
+#project-3-info-container {
+  flex-grow: 1;
+}
 #skills {
   width: 100%;
   height: 100vh;
+  background-color: #623c94;
 }
-
+.skills-heading{
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 50px;
+}
 #contact {
   width: 100%;
   height: 100vh;
