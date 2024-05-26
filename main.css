@@ -230,7 +230,7 @@ ul:last-child {
   height: 100vh;
   background-color: #623c94;
 }
-.skills-heading{
+.skills-heading {
   font-size: 50px;
   font-weight: 700;
   color: white;
@@ -239,4 +239,6 @@ ul:last-child {
 #contact {
   width: 100%;
   height: 100vh;
+  background-color: #261a2b;
+  color: white;
 }

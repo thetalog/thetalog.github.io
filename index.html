@@ -107,7 +107,7 @@
                   todo-app-python
                 </h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p class="mb-3 font-normal dark:text-gray-400">
                 TODO App is a versatile command-line tool for managing lists,
                 designed to handle a variety of tasks with ease. This Python
                 script provides a simple yet effective interface for adding,
@@ -157,7 +157,7 @@
                   pwm
                 </h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p class="mb-3 font-normal dark:text-gray-400">
                 The pwm Password Manager is a comprehensive Bash script designed
                 to securely manage passwords using encryption and decryption
                 mechanisms. The script primarily relies on OpenSSL for
@@ -204,7 +204,7 @@
                   rock_paper_scissor_cpp
                 </h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p class="mb-3 font-normal dark:text-gray-400">
                 This C++ program is a simple implementation of the classic
                 "Rock, Paper, Scissors" game where the player competes against
                 the computer (AI). The player selects their throw (Rock, Paper,
@@ -287,9 +287,90 @@
           </div>
         </div>
       </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Contact details.</p>
+      <section id="contact" class="bg-gray-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-extrabold mb-8">Contact</h2>
+          <p class="mb-8 text-lg">
+            Feel free to reach out to me via the form below or through my social
+            media channels.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-4">
+              <div>
+                <label for="name" class="block text-sm font-medium">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                />
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                >
+                  Send Message
+                </button>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div>
+                <h3 class="text-lg font-medium">Email</h3>
+                <p class="">mail30deeprajdas@gmail.com</p>
+              </div>
+              <div>
+                <h3 class="text-lg font-medium">Address</h3>
+                <p class="">
+                  Guwahati, Assam, India
+                </p>
+              </div>
+              <div class="flex space-x-4">
+                <a
+                  href="https://github.com/deeprajdas"
+                  class="text-gray-500 hover:"
+                >
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="...GitHub icon path..." />
+                  </svg>
+                </a>
+                <a
+                  href="https://linkedin.com/in/deeprajdas"
+                  class="text-gray-500 hover:text-gray-900"
+                >
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="...LinkedIn icon path..." />
+                  </svg>
+                </a>
+                <!-- Add more social links as needed -->
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
