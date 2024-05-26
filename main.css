@@ -42,6 +42,10 @@
 #B7A7AE
 #58545B
 #1C252C */
+
+html {
+  width: 100%;
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -198,7 +202,7 @@ ul:last-child {
 }
 
 #projects {
-  background-color: #1c252c;
+  background-color: #12171c;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -228,7 +232,7 @@ ul:last-child {
 #skills {
   width: 100%;
   height: 100vh;
-  background-color: #623c94;
+  background-color: #1a1820;
 }
 .skills-heading {
   font-size: 50px;
@@ -239,6 +243,233 @@ ul:last-child {
 #contact {
   width: 100%;
   height: 100vh;
-  background-color: #261a2b;
+  background-color: #1b1b1b;
   color: white;
+}
+#contact-container-1 {
+  margin-left: 150px;
+} /* Styles for small screens (smartphones) */
+
+@media (max-width: 1600px) {
+  header {
+    height: auto;
+    padding: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 20px;
+    margin-right: 0 !important;
+  }
+
+  #home-child-container-1 {
+    margin-top: -90px;
+  }
+  #home-child-container-1 > .content {
+  }
+  #home-child-container-1 > .content > * {
+    font-size: 25px;
+  }
+  #home-child-container-1 > .content > *:last-child {
+    font-size: 15px;
+  }
+  #home-child-1-para {
+    width: 80%;
+  }
+
+  #about {
+    flex-direction: column;
+    font-size: 25px;
+    padding: 20px;
+  }
+  #about-container-1:first-child {
+    margin-top: 50px;
+  }
+  #about-para {
+    font-size: 15px !important;
+  }
+  #about-container-1 {
+    margin-left: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #my-photo-container {
+    margin-top: 50px;
+    height: 300px;
+    width: 250px;
+  }
+  #my-photo {
+    border-radius: 5px;
+  }
+  #projects {
+    height: fit-content;
+  }
+  #projects_container_2 {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  #project-1-name,
+  #project-2-name,
+  #project-3-name {
+    font-size: 15px;
+  }
+  .github-read-more-btn {
+    width: fit-content;
+    font-size: 10px;
+  }
+  #projects_container_1 {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  #projects_container_2 {
+    display: flex;
+    align-items: center;
+  }
+  .particular-project-container {
+    max-width: 80%;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+  .particular-project-container > * {
+    font-size: 12px;
+  }
+  #skills {
+    height: fit-content;
+  }
+  #skills .container {
+    padding: 20px;
+  }
+  .skills-heading {
+    font-size: 25px;
+  }
+  #skills .grid {
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 25px;
+  }
+  .grid-cont {
+    font-size: 15px;
+  }
+  #contact-container-1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #contact-container-1 > * {
+    font-size: 25px;
+  }
+  .contact-container-1 > * {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    height: auto;
+    padding: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 12px;
+    margin-right: 0 !important;
+  }
+
+  #home {
+    font-size: 36px;
+  }
+
+  #home-child-container-1 {
+    margin-top: 0;
+  }
+  #home-child-container-1 > .content {
+    margin-top: 80px;
+    justify-content: start;
+  }
+  #home-child-container-1 > .content > * {
+    font-size: 18px;
+  }
+  #home-child-container-1 > .content > *:last-child {
+    font-size: 12px;
+  }
+  #home-child-1-para {
+    width: 80%;
+  }
+
+  #about {
+    flex-direction: column;
+    font-size: 18px;
+    padding: 20px;
+  }
+  #about-para {
+    font-size: 12px !important;
+  }
+  #about-container-1 {
+    margin-left: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #my-photo-container {
+    margin-top: 50px;
+    height: 300px;
+    width: 250px;
+  }
+  #my-photo {
+    border-radius: 5px;
+  }
+  #projects {
+    height: fit-content;
+  }
+  #projects_container_2 {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  #project-1-name,
+  #project-2-name,
+  #project-3-name {
+    font-size: 15px;
+  }
+  .github-read-more-btn {
+    width: fit-content;
+    font-size: 10px;
+  }
+  #projects_container_1 {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  #projects_container_2 {
+    display: flex;
+    align-items: center;
+  }
+  .particular-project-container {
+    max-width: 80%;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+  .particular-project-container > * {
+    font-size: 12px;
+  }
+  #skills {
+    height: fit-content;
+  }
+  #skills .container {
+    padding: 20px;
+  }
+
+  #skills .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #contact-container-1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
